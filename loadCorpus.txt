@@ -1,0 +1,11 @@
+to load a corpus using the textmatrix function of the lsa package:
+a directory should be supplied with all file names.
+All files should contain utf-8 text.
+If a file contains non utf-8 character, or no valid term - the load will fail.
+
+To validate all files are utf-8:
+cd to one specific directory
+iconv -f UTF-8 * > /dev/null  2> errs
+cat errs | sed  's/iconv: \([0-9]*\):.*/iconv -f iso-8859-1 -t utf-8 \1 > \1a ; mv -f \1a \1/' > doconvert
+./doconvert
+rm errs doconvert
