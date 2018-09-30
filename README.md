@@ -101,12 +101,19 @@ Table 3: Example of retrieval of source documents for the sci.encryption categor
 ### Installation and Running Instructions
 
 The computer should be connected to the internet, since it retrieves pages from Wikipedia during run time.
+
 The run folder should contain the following files:
+
 runAutoTL.R		Entry point. Runs the algorithm on the files.
+
 runAutoTL.Rout		Output file
+
 AutoTL.R		Main algorithm file.
+
 wikipediaHelpers.R	Helper file to fetch and format data from Wikipedia
+
 loadCorpus.txt		Some comments regarding preprocessing text files 
+
 20news-bydate		Document corpus in balanced/unbalanced and train/test
 
 Running the program on the full supplied corpus should take ~30 minutes.
@@ -116,6 +123,7 @@ Running the program on the full supplied corpus should take ~30 minutes.
 ### References
 
 Yang, L., & Zhang, J. (2017). Automatic transfer learning for short text mining. EURASIP Journal on Wireless Communications and Networking, 2017(1), 42. [http://doi.org/10.1186/s13638-017-0815-5](http://doi.org/10.1186/s13638-017-0815-5)
+
 20 Newsgroups, [http://qwone.com/~jason/20Newsgroups/20news-bydate.tar.gz](http://qwone.com/~jason/20Newsgroups/20news-bydate.tar.gz)
 Belkin M., & Niyogi P. (2003). Laplacian Eigenmaps for Dimensionality Reduction and Data Representation. Neural Computation, 2003, vol. 6, pp. 1373-1396
 
